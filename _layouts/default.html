@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		{% seo %}
+		{% feed_meta %}
+		<link rel="stylesheet" href="https://use.typekit.net/szu2cgg.css">
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
+
+		<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="{{ site.baseurl }}/touch-icon.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.png">
+
+		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
+			<script>
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', '{{ site.google_analytics_key }}', 'auto');
+				ga('send', 'pageview');
+			</script>
+			<script async src='https://www.google-analytics.com/analytics.js'></script>
+		{% endif %}
+	</head>
+	<body>
+		<header class="site-header">
+				<div class="logo"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.svg" alt="Harrier Design CO" width="150"></a></div>
+				{% include navigation.html %}
+		</header>
+
+		{{ content }}
+
+		<footer class="">
+			<p class="editor-link"><a href="cloudcannon:collections/_data/footer.yml" class="btn"><strong>&#9998;</strong> Update Footer Sections</a></p>
+
+			<div class="legal-line">
+				<p>
+					&copy; {{ site.time | date: '%Y' }} {{ site.data.company.title }}
+				</p>
+			</div>
+		</footer>
+		<script  src='{{ site.baseurl }}/js/site.js'></script>
+	</body>
+</html>

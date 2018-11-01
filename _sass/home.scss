@@ -1,0 +1,68 @@
+.intro {
+  background: $light;
+  border: 2px solid $dark;
+  padding: 1.5rem;
+  @media #{$large} {
+    padding: 3rem;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1.3fr;
+    grid-template-rows: 1fr;
+    grid-gap: 3em;
+  }
+  @media #{$xlarge} {
+    grid-template-columns: 1fr 1.8fr;
+    grid-template-rows: 1fr;
+    grid-gap: 3em;
+    padding: 4rem;
+  }
+  .intro--text {
+    padding-bottom: 1.5rem;
+  }
+  h1 {
+    font-size: 1.55rem;
+    padding-bottom: 2rem;
+    @media #{$medium} {
+      font-size: 1.8rem;
+    }
+    @media #{$large} {
+      font-size: 2rem;
+    }
+    a {
+      color: $dark;
+      text-decoration: underline;
+    }
+  }
+}
+
+
+.intro--image {
+  line-height:0;
+  position: relative;
+  &:before {
+    content: '';
+    border: 8px solid $dark;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    -webkit-transition: all .4s cubic-bezier(.45,.05,.55,.95);
+    transition: all .4s cubic-bezier(.45,.05,.55,.95);
+    animation: moveIt 8s forwards;
+    @media #{$medium} {
+      border: 15px solid $dark;
+    }
+  }
+}
+
+@keyframes moveIt {
+  0%   { @include move1; }
+  16.7% { @include move2; }
+  33.4% { @include move3; }
+  50.1% { @include move4; }
+  66.8% { @include move5; }
+  83.5% { @include move6; }
+  //85.5% { @include move7; }
+  100% { @include move1; }
+}

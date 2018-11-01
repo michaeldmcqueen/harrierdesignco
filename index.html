@@ -1,0 +1,52 @@
+---
+title: Harrier Design Company
+---
+
+<section class="intro">
+	<section class="intro--detail intro--text">
+		<h1 class="editable">Harrier is a small <a href="#">web design</a> and <a href="#">development</a> studio based in <a href="#">Fort Collins, Colorado</a>.</h1>
+		<a class="btn primary" href="{{ site.baseurl }}/contact/">Contact Us</a><a class="btn secondary" href="{{ site.baseurl }}/contact/">Work</a>
+	</section>
+	<section class="intro--detail intro--image">
+		<img src="images/harrier-pattern.svg" class="harrier-pattern" alt="Responsive Web Design "/>
+	</section>
+</section>
+
+<section class="project-list dark">
+	<div class="container">
+		<div class="project-list--heading-wrap">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.5 64.5" width="35">
+				<defs>
+					<style>
+						.cls-1 { fill: #ff7559;}
+						.cls-2 {fill: #1c1c1c;}
+					</style>
+				</defs>
+				<g id="Group_16" data-name="Group 16" transform="translate(0.234 -1201.766)">
+					<g id="Group_15" data-name="Group 15" transform="translate(-0.234 1201.766)">
+						<circle id="Ellipse_9" data-name="Ellipse 9" class="cls-1" cx="6.911" cy="6.911" r="6.911" transform="translate(24.397 26.361) rotate(-6.264)"/>
+						<path id="Path_56" data-name="Path 56" class="cls-1" d="M64.5,32.25a32.25,32.25,0,0,0-64.5,0A32.654,32.654,0,0,0,1.72,42.7L21.576,22.841l.032.032a14.167,14.167,0,0,1,24.139,6.035l6.813,3.569-6.813,3.569a14.214,14.214,0,0,1-10.09,10.123V58.628a55.617,55.617,0,0,1-.292,5.71A32.2,32.2,0,0,0,64.5,32.25Z"/>
+						<path id="Path_57" data-name="Path 57" class="cls-1" d="M52.3,150.805V138.347a14.078,14.078,0,0,1-4.25-1.947L35.4,149.053a32.055,32.055,0,0,0,16.579,7.332A45.6,45.6,0,0,0,52.3,150.805Z" transform="translate(-23.915 -92.145)"/>
+						<path id="Path_58" data-name="Path 58" class="cls-1" d="M31.855,117.451A14.148,14.148,0,0,1,28.9,112L15.6,125.3a30.516,30.516,0,0,0,3.7,4.737Z" transform="translate(-10.539 -75.662)"/>
+						<path id="Path_59" data-name="Path 59" class="cls-2" d="M39.237,84.37a14.214,14.214,0,0,0,10.09-10.123l6.813-3.569-6.813-3.569a14.167,14.167,0,0,0-24.139-6.035l-.032-.032L5.3,80.866a32.387,32.387,0,0,0,3.342,6.911l13.3-13.3A14.148,14.148,0,0,0,24.9,79.925L12.34,92.514a29.224,29.224,0,0,0,2.725,2.563L27.719,82.423a14.448,14.448,0,0,0,4.25,1.947V96.829a53.117,53.117,0,0,1-.324,5.58,29.894,29.894,0,0,0,4.185.26c1.038,0,2.076-.065,3.082-.162A55.149,55.149,0,0,0,39.2,96.8V84.37ZM35.6,77.589a6.911,6.911,0,1,1,6.911-6.911A6.916,6.916,0,0,1,35.6,77.589Z" transform="translate(-3.58 -38.169)"/>
+					</g>
+				</g>
+			</svg>
+			<h3 class="red project-list--heading">Recent Work</h3>
+		</div>
+		{% for project in site.projects %}
+			<div class="project-list--item" style="background-color: {{ project.container_color }}">
+					<div class="project-list--item-details">
+						<h5 class="project-category" style="color: {{ project.text_color }}">{{ project.category }}</h5>
+						<h2 class="project-title {{ project.heading }}">{{ project.name }}</h2>
+						<a href="{{ site.baseurl }}{{ project.url }}" class="btn primary" style="background-color: {{ project.btn_color }}">View Project</a>
+					</div>
+					<div class="project-list--item-image {{ project.image_type}}">
+					<a href="{{ site.baseurl }}{{ project.url }}" class="cover-link">
+						<img src="{% include relative-src.html src=project.image_path %}" alt="{{ project.name }}">
+					</a>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</section>
