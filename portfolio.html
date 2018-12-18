@@ -1,24 +1,32 @@
 ---
 title: Portfolio
-heading: Our Work
-subtitle: See some of our proud customers with exemplary results.
+heading: Below you'll find a variety of our <strong>design</strong> and <strong>development</strong> work. More coming soon. 
+subtitle: 
 ---
-
-<section class="project-list">
-	<div class="container">
-			{% for project in site.projects %}
-				<div class="project-list--item">
+<section class="intro portfolio">
+		<header class="intro--detail intro--text">
+			<h1>{{ page.heading }}</h1>
+			{% if page.subtitle %}<p>{{ page.subtitle }}</p>{% endif %}
+		</header>
+		
+	</section>
+<section class="project-list dark">
+		<div class="container">
+			{% assign sorted_project = site.projects | sort:"weight" %}
+			{% for project in sorted_project %}
+				<div class="project-list--item" style="background-color: {{ project.container_color }}">
 						<div class="project-list--item-details">
-							<h5 class="project-category">{{ project.categories }}</h5>
-							<h2 class="project-title">{{ project.name }}</h2>
-							<a href="{{ site.baseurl }}{{ project.url }}" class="btn">View Project</a>
+							<h5 class="project-category" style="color: {{ project.text_color }}">{{ project.category }}</h5>
+							<h2 class="project-title {{ project.heading }}"><a href="{{ site.baseurl }}{{ project.url }}">{{ project.name }}</a></h2>
+							<a href="{{ site.baseurl }}{{ project.url }}" class="btn primary" style="background-color: {{ project.btn_color }}; border-color:{{ project.btn_color }}; ">View Project</a>
 						</div>
-						<div class="project-list--item-image">
+						<div class="project-list--item-image {{ project.image_type}}">
 						<a href="{{ site.baseurl }}{{ project.url }}" class="cover-link">
 							<img src="{% include relative-src.html src=project.image_path %}" alt="{{ project.name }}">
 						</a>
 					</div>
 				</div>
 			{% endfor %}
-	</div>
-</section>
+		</div>
+	</section>
+	

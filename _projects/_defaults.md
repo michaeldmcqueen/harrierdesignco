@@ -7,5 +7,6 @@ image_type:
 heading:
 container_color: 
 text_color: 
-btn_color: 
+btn_color:
+border_color: 
 ---

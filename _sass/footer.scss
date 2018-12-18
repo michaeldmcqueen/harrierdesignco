@@ -1,0 +1,30 @@
+.site-footer {
+  background: $light;
+  border: 2px solid $dark;
+  font-family: $font;
+  .footer-line {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media #{$large} {
+      padding: 1.5rem  3rem;
+      grid-gap: 2em;
+    }
+    @media #{$xlarge} {
+      padding: 1.5rem 4rem;
+    }
+    .newsletter {
+      a {
+        text-decoration: none;
+        border-bottom: 1px dotted;
+        color: inherit;
+      }
+    }
+    .copy {
+      text-align: right;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}

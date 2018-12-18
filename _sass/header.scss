@@ -1,16 +1,15 @@
 .site-header {
   display: flex;
   position: relative;
-  height: 3.45rem;
-  padding-top: .5rem;
+  padding: 1.25rem 0;
 	@media #{$large} {
+    height: 3.45rem;
+    align-items: center;
     padding-top: 0;
     padding-bottom: 2rem;
     height: auto;
 	}
 }
-
-
 .logo {
   display: inline-block;
   vertical-align: middle;
@@ -18,8 +17,17 @@
     display: block;
   }
 }
-
+.harrier-bird {
+  display: none;
+  @media #{$medium} {
+    display: block;
+    width: 40px;
+    position: absolute;
+    right: 0;
+  }
+}
 .site-navigation  {
+  font-family: $alt-font;
   @media #{$medium-down} {
     position: fixed;
     height: 100%;
@@ -67,7 +75,7 @@
         transition: all .4s cubic-bezier(.45,.05,.55,.95);
       }
       a {
-        color: $dark;
+        color: $blue;
       }
     }
   }
@@ -126,7 +134,7 @@
   z-index: 4;
   position: absolute;
   right: 0;
-  top: 0.75rem;
+  top: 1.4rem;
 
   @media #{$medium} {
 		display: none;

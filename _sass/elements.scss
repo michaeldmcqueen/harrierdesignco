@@ -32,7 +32,7 @@ html, body {
 }
 
 body {
-	font-family: halyard-display, sans-serif;
+	font-family: $mono;
 	font-weight: 400;
 	font-style: normal;
 }
@@ -76,6 +76,9 @@ h4 {
 	font-size: 1.5rem;
 	margin: 0 0 10px 0;
 }
+strong {
+	font-family: $alt-font;
+}
 
 p, address, ul, ol, pre {
 	margin: 0 0 20px 0;
@@ -94,25 +97,56 @@ pre {
 a.btn {
 	display: inline-block;
 	font-weight: 700;
-	color: #fff;
-	border-radius: 29px;
-	padding: 13px 45px;
+	border-radius: 0px;
+	padding: 17px 25px 13px;
+	margin-bottom: 1rem;
+	text-align: center;
 	line-height: 1;
 	margin-right: 1rem;
 	font-family: $alt-font;
 	font-size: .8rem;
-	box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+	position: relative;
+	border-color: $yellow;
+	@media #{$medium} {
+		padding: 17px 50px 13px;
+		width: auto;
+		margin-right: 1.5rem;
+		margin-bottom: 0;
+	}
 	&:hover {
 		text-decoration: none;
 	}
+	&:before {
+		content: '';
+		position: absolute;
+		border: 2px solid black;
+		border-color: inherit;  
+		width: 100%;
+		height: 100%;
+		top: 5px;
+		left: 5px;
+	}
 	&.primary {
-		background: $red;
+		background: $yellow;
+		color: $blue;
+		border-color: $yellow;
 	}
 	&.secondary {
 		background: $blue;
+		color: $yellow;
+		margin-right: 0;
+		border-color: $blue;
 	}
 }
 
+.home {
+	a.btn {
+		width: 47%;
+		@media #{$medium} {
+			width: auto;
+		}
+	}
+}
 .dark {
 	background-color: $dark;
 }

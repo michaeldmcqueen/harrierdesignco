@@ -2,13 +2,13 @@
 title: Harrier Design Company
 ---
 
-<section class="intro">
+<section class="intro home">
 	<section class="intro--detail intro--text">
-		<h1 class="editable">Harrier is a small <a href="#">web design</a> and <a href="#">development</a> studio based in <a href="#">Fort Collins, Colorado</a>.</h1>
-		<a class="btn primary" href="{{ site.baseurl }}/contact/">Contact Us</a><a class="btn secondary" href="{{ site.baseurl }}/contact/">Work</a>
+		<h1 class="editable">Harrier is a small <span>web design</span> and <span>development</span> studio in Fort Collins, Colorado. We design and build quality,  meaningful, sustainable websites.</h1>
+		<a class="btn primary" href="{{ site.baseurl }}/contact/">Work with Us</a><a class="btn secondary" href="{{ site.baseurl }}/portfolio/">Our Work</a>
 	</section>
 	<section class="intro--detail intro--image">
-		<img src="images/harrier-pattern.svg" class="harrier-pattern" alt="Responsive Web Design "/>
+		<img src="images/harrier-pattern-ryb.svg" class="harrier-pattern" alt="Responsive Web Design "/>
 	</section>
 </section>
 
@@ -18,7 +18,7 @@ title: Harrier Design Company
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.5 64.5" width="35">
 				<defs>
 					<style>
-						.cls-1 { fill: #ff7559;}
+						.cls-1 { fill: #EF483E;}
 						.cls-2 {fill: #1c1c1c;}
 					</style>
 				</defs>
@@ -34,12 +34,14 @@ title: Harrier Design Company
 			</svg>
 			<h3 class="red project-list--heading">Recent Work</h3>
 		</div>
-		{% for project in site.projects %}
+
+		{% assign sorted_project = site.projects | sort:"weight" %}
+		{% for project in sorted_project limit:3  %}
 			<div class="project-list--item" style="background-color: {{ project.container_color }}">
 					<div class="project-list--item-details">
 						<h5 class="project-category" style="color: {{ project.text_color }}">{{ project.category }}</h5>
-						<h2 class="project-title {{ project.heading }}">{{ project.name }}</h2>
-						<a href="{{ site.baseurl }}{{ project.url }}" class="btn primary" style="background-color: {{ project.btn_color }}">View Project</a>
+						<h2 class="project-title {{ project.heading }}"><a href="{{ site.baseurl }}{{ project.url }}">{{ project.name }}</a></h2>
+						<a href="{{ site.baseurl }}{{ project.url }}" class="btn primary" style="background-color: {{ project.btn_color }};border-color:{{ project.btn_color }}; ">View Project</a>
 					</div>
 					<div class="project-list--item-image {{ project.image_type}}">
 					<a href="{{ site.baseurl }}{{ project.url }}" class="cover-link">

@@ -3,23 +3,31 @@ layout: default
 ---
 {% assign portfolio = site.pages | where: "path", "portfolio.html" | first %}
 
-<section class="hero diagonal">
-	<div class="container">
-		{% if portfolio.heading %}
-		<h2><a href="{{ site.baseurl }}/portfolio/">{{ portfolio.heading }}</a> / {{ page.title | capitalize }}</h2>
+<section class="project-node-intro">
+	<!-- {% if portfolio.subtitle %}
+		<h6><a href="{{ site.baseurl }}/portfolio/">{{ portfolio.heading }}</a> / {{ page.subtitle }}</h6>
+	{% endif %} -->
+	
+	<div class="project-node--intro--details" style="background-color: {{ page.container_color }}">
+		<h5 class="project--node-category" style="color: {{ page.text_color }}">{{ page.category }}</h5>
+		{% if page.name %}
+			<h1 class="project-node-title {{ page.heading }}">{{ page.name }}</h1>
 		{% endif %}
-		{% if page.subtitle %}
-			<p class="subtext">{{ page.subtitle }}</p>
+		{% if page.external_url %}
+			<a href="{{ page.external_url }}" class="btn primary" style="background-color: {{ page.btn_color }}">{{ page.subtitle }}</a>
 		{% endif %}
+	</div>
+	<div class="project-node--intro--content">
+		{{ content }}
 	</div>
 </section>
 
-<section class="diagonal">
+<section class="project-node-images" style="background-color: {{ page.container_color }}">
 	<div class="container">
-		<p><img src="{% include relative-src.html src=page.image_path %}" class="screenshot"></p>
-		<div>
-			{{ content }}
-		</div>
-		<p><a href="{{ page.external_url }}">View {{ page.title }} &rarr;</a></p>
-	</div>
+	{% for image in page.project_images %}
+		<img src="{{ image.image_path }}" alt="{{ image.title }}"/>
+	{% endfor %}
+
+
+</div>
 </section>

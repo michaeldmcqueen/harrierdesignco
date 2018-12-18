@@ -4,16 +4,33 @@
 $pattern: "{{ site.baseurl }}/images/pattern.png";
 $screenshot-buttons: "{{ site.baseurl }}/images/screenshot-buttons.svg";
 
-$brand-color: #FFA715;
-$light: #FFF5EB;
+@font-face {
+  font-family: 'MaisonBold';
+  src: url('/fonts/Maison-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/Maison-Bold.woff') format('woff'); /* Pretty Modern Browsers */
+  font-weight: 700;
+  font-style: none;
+}
+@font-face {
+  font-family: 'MaisonRegular';
+  src: url('/fonts/Maison-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/Maison-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+  font-weight: 400;
+  font-style: none;
+}
+
+$brand-color: #FFC832;
+$light: #FFFBF7;
 $dark: #1C1C1C;
-$red: #FF7559;
+$yellow: #FFC832;
+$red: #EF483E;
 $blue: #022266;
 $html-background-color: #fff;
 $secondary-brand-color: #FFC461;
 $middle-gradient-color: mix($brand-color, $secondary-brand-color, 95%);
-
-$alt-font: termina, sans-serif;
+$font: 'MaisonRegular', sans-serif;
+$alt-font: 'MaisonBold', sans-serif;
+$mono: 'IBM Plex Mono', monospace;
 
 // Breakpoints
 $tablet: "(min-width: 450px)";
@@ -25,6 +42,7 @@ $medium: "(min-width: 620px)";
 $medium-down: "(max-width: 620px)";
 $large: "(min-width: 768px)";
 $large-down: "(max-width: 768px)";
+$mlarge: "(min-width: 992px)";
 $xlarge: "(min-width: 1200px)";
 
 // Home Animation
@@ -32,41 +50,41 @@ $col: 16.6666666667%;
 $row: 25%;
 
 @mixin move1 {
-  width: $col * 6;
-  left: 0;
+  width: $col * 6 ;
+  left: 15px;
   height: $row * 4;
-  top:0;
+  top: 15px;
 }
 @mixin move2 {
   width: $col * 2;
-  left: $col * 2;
   height: $row * 3;
-  top: $row * 1;
+  left: calc((#{$col} * 2) + 15px);
+  top: calc($row + 15px);
 }
 @mixin move3 {
   width: $col * 4;
   height: $row * 3;
-  left: $col * 2;
-  top: 0;
+  left: calc((#{$col} * 2) + 15px);
+  top: 15px;
 }
 @mixin move4 {
   width: $col * 2;
   height: $row * 3;
-  left: $col * 4;
-  top: $row * 1;
+  left: calc((#{$col} * 4) + 15px);
+  top: calc(#{$row} + 15px);
 }
 
 @mixin move5 {
   width: $col * 4;
-  left: 0;
+  left: 15px;
   height: $row * 2;
-  top: $row * 1;
+  top: calc(#{$row} + 15px);
 }
 @mixin move6 {
   width: $col * 2;
-  left: 0;
+  left: 15px;
   height: $row * 4;
-  top: 0;
+  top: 15px;
 }
 
 @import "elements";
@@ -75,6 +93,7 @@ $row: 25%;
 @import "contact";
 @import "projects";
 @import "blog";
+@import "about";
 @import "forms";
 @import "header";
 @import "footer";
