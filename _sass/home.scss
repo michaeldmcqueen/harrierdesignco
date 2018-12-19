@@ -2,7 +2,6 @@
   background: $light;
   border: 2px solid $dark;
   padding: 1.5rem;
-  
   @media #{$large} {
     padding: 3rem;
     display: grid;
@@ -16,6 +15,11 @@
     grid-template-rows: 1fr;
     grid-gap: 3em;
     padding: 4rem;
+  }
+  .container {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
   }
   .intro--text {
     padding-bottom: 1.5rem;

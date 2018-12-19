@@ -176,6 +176,7 @@
   .container { 
     @media #{$xlarge} {
       max-width: 1400px;
+      margin: 0 auto;
     }
   }
   img {
