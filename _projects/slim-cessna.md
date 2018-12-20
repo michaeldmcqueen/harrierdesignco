@@ -2,7 +2,7 @@
 weight: 2
 name: Slim Cessna’s Auto Club at Downtown Artery
 subtitle: Not for profit template for Jekyll
-category: Graphic Design, Poster Design
+category: Graphic Design, Illustration
 external_url: 
 heading:
  - "dark-txt"
@@ -14,15 +14,19 @@ image_path: /images/clients/slim.png
 image_type: "portrait"
 project_images:
   - image_path: /images/clients/slim/slim-poster.jpg
-    title: Children's Ministry Wordpress Site
+    title: Slim Cessna’s Auto Club Poster
   - image_path: /images/clients/slim/slim-close-up.png
-    title: Children's Ministry Wordpress Site
+    title: Slim Cessna’s Auto Club Poster Close Up
   - image_path: /images/clients/slim/slim-fresh-print.png
-    title: Children's Ministry Wordpress Site
+    title: Slim Cessna’s Auto Club Poster Screenprint
   - image_path: /images/clients/slim/slim-wip.png
-    title: Children's Ministry Home Page
+    title: Slim Cessna’s Auto Club Poster WIP
 ---
 
-"This is how it's always been... This is how we do things in the country!" 
+<a href="https://www.youtube.com/watch?v=2hDRxBpyHbc" title="Slim Cessna's Auto Club - This Is How We Do Things In The Country | Glitterhouse Records" target="_blank">"This is how it's always been... This is how we do things in the country!"</a>
 
-We got the opportunity, to create a poster for Slim Cessna's show at the Downtown Artery. Being fans of their live shows it was fun to work on this project Jumped into the project and worked with Ink Lab, in Denver, printed the posters. 3-color Screenprint on 200lb stock.
+We got the opportunity to create a poster for Slim Cessna's show at the Downtown Artery in Fort Collins. Being fans of their electric live shows it was a fun project to work on.  
+
+Artwork for the band tends to be dark southern gothic, so we experimented with a brighter color pallete while still holding onto some of those darker overtones in the illustration.
+
+We worked with <a href="http://www.inklounge.com/" title="Ink Lounge Website" target="_blank">Ink Lounge</a> in Denver to screenprint the posters.

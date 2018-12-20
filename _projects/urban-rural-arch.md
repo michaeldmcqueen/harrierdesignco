@@ -2,7 +2,7 @@
 weight: 5
 name: Urban Rural | Design
 subtitle: View the Site
-category: Branding, Web Design, Web Development
+category: Web Design, Web Development, Branding
 external_url: https://urbanruralarch.com
 heading:
  - "dark-txt"
@@ -19,4 +19,4 @@ project_images:
   - image_path: /images/clients/urban-rural/urban-rural-logo.png
     title: Cm.com
 ---
-Brian at Urban Rural Design has designed and managed projects large and small, commercial and residential, in various parts of the country. We worked with Brian to create new branding and website to show off their portfolio and show the hide range of experience. 
+Brian at Urban Rural Design specializes in a combination of architectural practice and construction administration, he has designed and managed projects large and small, commercial and residential, in various parts of the country. We worked with Brian to create new branding and website to show off their portfolio and show the range of experience they have. 

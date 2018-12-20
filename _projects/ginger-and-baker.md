@@ -2,7 +2,7 @@
 weight: 1
 name: Ginger and Baker Wordpress Development
 subtitle: Visit Site
-category: Web Development, Wordpress Development
+category: Web Design, Web Development, Wordpress Development
 external_url: https://gingerandbaker.com
 heading:
  - "light-txt"
@@ -23,4 +23,6 @@ project_images:
 
 ---
 
-Brought in to work with Ginger and Baker's team on their existing Wordpress CMS, upgrading, adding new features, and continually improving performance, design and user experience.  We've built new feature such as a online order sytem for their Pies and a Job Board for open positions and applications. 
+Ginger & Baker is home to a market, bakery, restaurants, teaching kitchen, event spaces and some of the best patios in town, located in the historic renovated grain mill in Downtown Fort Collins it's a truly special spot.
+
+We were brought in to work with Ginger & Baker's team on their existing Wordpress CMS, upgrading, adding new features, and continually improving performance, design and user experience. We've built new feature such as an online order sytem for their Pies and a Job Board for open positions and applications. 
