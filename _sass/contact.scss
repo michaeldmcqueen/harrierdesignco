@@ -33,8 +33,8 @@
     display: inline-block;
     font-weight: 700;
     border-radius: 0px;
-    padding: 17px 14px 13px;
-    margin-bottom: 1rem;
+    padding: 17px 34px 13px;
+    margin-bottom: 0;
     text-align: center;
     line-height: 1;
     font-family: $alt-font;
@@ -45,7 +45,6 @@
     @media #{$medium} {
       padding: 17px 50px 13px;
       width: auto;
-      margin-bottom: 0;
     }
     &:hover {
       text-decoration: none;

@@ -57,10 +57,11 @@
     max-width: 80%;
   }
   .project-list--item-details {
-    padding: 1.25rem;
+    padding: 1.5rem 1.5rem;
     display: grid;
     grid-area: details;
     grid-template-rows: max-content;
+
     @media #{$large} {
       padding: 2rem;
     }
@@ -72,6 +73,9 @@
       @media #{$medium} {
         padding: 2rem;
       }
+    }
+    &.portrait {
+      align-self: end;
     }
   }
   .project-title {
@@ -107,14 +111,15 @@
 /// Full Node 
 .project-node-intro {
     background: $light;
-    border: 2px solid $dark;
-    padding: 1.5rem;
+    
     @media #{$large} {
       display: grid;
       height: 100%;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
       padding: 3rem;
+      border: 2px solid $dark;
+    padding: 1.5rem;
     }
     @media #{$xlarge} {
       grid-template-columns: 1fr 1.6fr;
