@@ -1,4 +1,4 @@
-title: Harrier Dev
+title: Harrier Design Company
 url: "https://teal-worm.cloudvent.net"
 baseurl:
 google_analytics_key: UA-130618819-1
@@ -6,7 +6,7 @@ google_maps_javascript_api_key:
 disqus_shortname:
 
 # Default description in social shares for the jekyll-seo-tag gem
-description: The website for Harrier Design.
+description: 
 
 # Author details for the jekyll-seo-tag gem
 author:
