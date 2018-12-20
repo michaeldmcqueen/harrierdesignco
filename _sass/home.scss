@@ -36,8 +36,13 @@
       font-family: $alt-font;
     }
     a {
+      border-bottom: 1px dotted;
       color: $blue;
-      text-decoration: underline;
+      &:hover {
+        border-bottom: 1px dotted $red;
+        color: $red;
+        text-decoration: none;
+      }
     }
   }
 }

@@ -6,7 +6,7 @@ category: Web Design, Web Development, Wordpress Development
 external_url: https://gingerandbaker.com
 heading:
  - "light-txt"
-container_color: "#847c67"
+container_color: "#59513f"
 text_color: "#d1c7aa"
 btn_color: "#d1c7aa"
 border_color: "#FFC832"

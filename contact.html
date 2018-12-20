@@ -1,5 +1,5 @@
 ---
-title: Contact Us
+title: Get in Touch.
 subtitle: Have a Project? Need help?
 ---
 
@@ -7,6 +7,7 @@ subtitle: Have a Project? Need help?
 	
 	<div class="contact-txt">
 		<h1 class="page-title">{{ page.title }}</h1>
+		<p>Have a project you want to discuss? Need help with an exisiting site? Fill out the form and we'll get back to you as soon as possible. </p>
 	</div>
 		<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
 			<input type="hidden" name="_to" value="hello@harrierdesigncompany.com" />
@@ -30,6 +31,7 @@ subtitle: Have a Project? Need help?
 			  </div>
 		</form>
 		<div id='map' style="height:100%;"></div>
+
 		<script>
 		mapboxgl.accessToken = 'pk.eyJ1IjoibWljaGFlbGRtY3F1ZWVubWFwIiwiYSI6ImNqMncweDFqeTAwYTIycXA4MHBta2VmNXgifQ.N5cPwbnfgvhmX5ms5YbZnA';
 			const map = new mapboxgl.Map({
@@ -38,6 +40,7 @@ subtitle: Have a Project? Need help?
 			center: [-105.084,40.584],
 			zoom: 14.0,
 		});
+
 		map.scrollZoom.disable();
 
 		</script>

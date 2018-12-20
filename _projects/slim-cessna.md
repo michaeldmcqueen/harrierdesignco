@@ -6,7 +6,7 @@ category: Graphic Design, Illustration
 external_url: 
 heading:
  - "dark-txt"
-container_color: 
+container_color: "#FFFBF7"
 text_color: "#EF483E"
 btn_color: "#EF483E"
 border_color: "#FFC832"

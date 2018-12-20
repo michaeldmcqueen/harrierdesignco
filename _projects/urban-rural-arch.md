@@ -5,8 +5,8 @@ subtitle: View the Site
 category: Web Design, Web Development, Branding
 external_url: https://urbanruralarch.com
 heading:
- - "dark-txt"
-container_color: '#2b7dbf'
+ - "light-txt"
+container_color: '#145a93'
 text_color: '#FBBE47'
 btn_color:   '#FBBE47'
 image_path: /images/clients/urban-rural.png
