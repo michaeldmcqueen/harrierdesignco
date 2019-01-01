@@ -69,6 +69,13 @@
       }
     }
   }
+  @media #{$medium} {
+    ul {
+      a {
+        color: $blue;
+      }
+    }
+  }
   @media #{$large} {
     ul {
       font-size: 1.25rem;
