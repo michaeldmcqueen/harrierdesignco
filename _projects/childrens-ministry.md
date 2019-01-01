@@ -21,6 +21,6 @@ project_images:
     title: Children's Ministry - Explore our Resources
 ---
 
-While working for Group Publishing I designed and built a new version of Childrensministry.com. The previous version of the site had been a around a long time and was in much need of an update, content was still being created and posted but the site wasn't maintained and wasn't responsive, with mobile users accounting for over 55% of all traffic it was a top goal to have a good mobile experience.  
+While working for Group Publishing I designed and built a new version of Childrensministry.com. The previous version of the site had been a around a long time and was in much need of an update, content was still being created and posted but the site wasn't maintained and wasn't responsive. With mobile users accounting for over 55% of all traffic it was a top goal to have a good mobile experience.
 
 I built a custom Wordpress theme as a base that now serves as the template for all content based Wordpress sites for Group, each with an additional theme layer on top for the individual brands.
