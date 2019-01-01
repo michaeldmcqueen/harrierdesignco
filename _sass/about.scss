@@ -6,8 +6,7 @@
 
   }
   .container {
-    max-width: 90%;
-    margin: 0 auto;  
+
   }
 }
 .intro.about {
@@ -43,6 +42,11 @@
   .container {
     display: block;
     grid-column: span 2;
+    max-width: 90%;
+    margin: 0 auto;  
+    @media #{$xlarge} {
+      max-width: 1400px;
+    }
     @media #{$large} {
       display: grid;
       grid-template-columns: 1fr 3.2fr;

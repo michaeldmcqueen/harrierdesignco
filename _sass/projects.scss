@@ -109,22 +109,37 @@
 }
 
 /// Full Node 
-.project-node-intro {
-    background: $light;
+
+.project-node-intro-wrap {
+  background: $light;
     
     @media #{$large} {
-      display: grid;
       height: 100%;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
       padding: 3rem;
       border: 2px solid $dark;
     padding: 1.5rem;
     }
     @media #{$xlarge} {
+
+      padding: 3rem;
+    }
+  .container {
+    margin: 0 auto;  
+    @media #{$xlarge} {
+      max-width: 1400px;
+    }
+  }
+}
+.project-node-intro {    
+    @media #{$large} {
+      display: grid;
+      height: 100%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+    @media #{$xlarge} {
       grid-template-columns: 1fr 1.6fr;
       grid-template-rows: 1fr;
-      padding: 3rem;
     }
     .intro--text {
       padding-bottom: 1.5rem;

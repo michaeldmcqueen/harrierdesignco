@@ -3,7 +3,9 @@ layout: default
 ---
 {% assign portfolio = site.pages | where: "path", "portfolio.html" | first %}
 
-<section class="project-node-intro">
+<section class="project-node-intro-wrap">
+	<div class="container">
+			<section class="project-node-intro">
 	<!-- {% if portfolio.subtitle %}
 		<h6><a href="{{ site.baseurl }}/portfolio/">{{ portfolio.heading }}</a> / {{ page.subtitle }}</h6>
 	{% endif %} -->
@@ -20,6 +22,8 @@ layout: default
 	<div class="project-node--intro--content">
 		{{ content }}
 	</div>
+</section>
+</div>
 </section>
 
 <section class="project-node-images" style="background-color: {{ page.container_color }}">
