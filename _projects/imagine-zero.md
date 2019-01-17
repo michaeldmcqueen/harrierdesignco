@@ -19,6 +19,6 @@ project_images:
     title: Shattering the Silence Event Fort Collins Website
 ---
 
-We were excited to work with [Imagine Zero](http://imaginezerosuicide.org) for the first Shattering the Silence: Self Care Fair. The event is aimed at LGBTQ youth age 13-17 with the goal of exploring new ways to practice self care. We designed and built a jekyll based website for the team to manage their programming schedule and marketing materials.
+We were excited to work with [Imagine Zero](http://imaginezerosuicide.org) for the first Shattering the Silence: Self Care Fair taking place in Downtown Fort Collins. The event is aimed at LGBTQ youth age 13-17 with the goal of exploring new ways to practice self care. We designed and built a jekyll based website for the team to manage their programming schedule and marketing materials.
 
 De-stigmitizing mental health issues and providing resources for those in need is a cause that is near and dear to both of us and we were glad to be able to help.
