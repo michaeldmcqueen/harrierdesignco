@@ -21,6 +21,8 @@ project_images:
     title: Postcard 01 - Time
   - image_path: /images/clients/hpe/artery-posters.jpg
     title: Downtown Artery Posters
+  - image_path: /images/clients/hpe/gnb.jpg
+    title: GNB
   - image_path: /images/clients/hpe/roar-vbs.jpg
     title: Roar VBS
   - image_path: /images/clients/hpe/movie-rank.jpg
