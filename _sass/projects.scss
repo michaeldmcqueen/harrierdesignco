@@ -40,6 +40,9 @@
     line-height: 0;
   }
 }
+.portfolio-page .project-list--item:last-child {
+  display: none;
+}
 .project-list--item {
   background: $light;
   border-radius: 5px;
@@ -56,6 +59,7 @@
   @media #{$xlarge} {
     max-width: 80%;
   }
+  
   .project-list--item-details {
     padding: 1.5rem 1.5rem;
     display: grid;
