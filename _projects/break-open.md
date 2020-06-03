@@ -1,5 +1,5 @@
 ---
-weight: 4
+weight: 5
 name: "Break Open: A Mental Health Festival"
 subtitle: Break Open
 category: "Web Design, Web Development, Branding, Graphic Design"

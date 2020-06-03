@@ -72,7 +72,7 @@
   @media #{$medium} {
     ul {
       a {
-        color: $blue;
+        color: $red;
       }
     }
   }
@@ -84,7 +84,7 @@
         transition: all .4s cubic-bezier(.45,.05,.55,.95);
       }
       a {
-        color: $blue;
+        color: $red;
       }
     }
   }

@@ -1,5 +1,5 @@
 ---
-weight: 2
+weight: 5
 name: Slim Cessna’s Auto Club at Downtown Artery
 subtitle: Not for profit template for Jekyll
 category: Graphic Design, Illustration

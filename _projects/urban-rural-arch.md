@@ -1,5 +1,5 @@
 ---
-weight: 5
+weight: 8
 name: Urban Rural | Design
 subtitle: View the Site
 category: Web Design, Web Development, Branding

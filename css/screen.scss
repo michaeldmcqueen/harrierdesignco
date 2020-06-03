@@ -30,7 +30,7 @@ $secondary-brand-color: #FFC461;
 $middle-gradient-color: mix($brand-color, $secondary-brand-color, 95%);
 $font: 'MaisonRegular', sans-serif;
 $alt-font: 'MaisonBold', sans-serif;
-$mono: 'IBM Plex Mono', monospace;
+$mono: 'Inter', monospace;
 
 // Breakpoints
 $tablet: "(min-width: 450px)";

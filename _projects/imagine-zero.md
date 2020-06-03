@@ -1,5 +1,5 @@
 ---
-weight: 1
+weight: 6
 name: "Shattering the Silence: Self Care Fair"
 subtitle: Visit the Event Website
 category: "Web Design, Web Development"

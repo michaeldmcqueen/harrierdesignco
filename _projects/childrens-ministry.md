@@ -1,5 +1,5 @@
 ---
-weight: 3
+weight: 4
 name: Children's Ministry Magazine for Group Publishing
 subtitle: Childrensministry.com
 category: Web Design, Web Development, Wordpress Development
